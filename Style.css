@@ -1,0 +1,79 @@
+style.css
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.board {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #555;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #777;
+}
